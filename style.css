@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
+*,
+::before
+::after {
+    box-sizing: border-box;
+}
+
+/* Police Logo + titres */
+header {
+    font-family: 'Shrikhand', cursive;
+    text-align: center;
+    box-shadow: 0 3px 2px #D5D5D5;
+    padding: 0.3rem;
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0px;
+}
