@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 3 Openclassrooms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Julie-2022/Ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Julie-2022/Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Julie-2022/Ohmyfood#readme",
+  "devDependencies": {
+    "sass": "^1.52.3"
+  }
+}
