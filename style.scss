@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*,
+::before
+::after {
+    box-sizing: border-box;
+}
+
+/* Police Logo + titres */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+header {
+    font-family: 'Shrikhand', cursive;
+    margin: 0px;
+    text-align: center;
+    padding: 0.3rem;
+}
+main .location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    background-color: #EAEAEA;
+    box-shadow: inset 0 3px 2px #D5D5D5;
+    padding: 0.5rem;
+}
+/* Zone Explorer */
+.explorer {
+    text-align: center;
+}
+.explorer h2 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+
+}
+.explorer p {
+    font-size: 1rem;
+}
+.explorer button {
+    color: white;
+    padding: 0 20px;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 3px 3px 12px 2px rgba(0,0,0,0.31);
+    background-image: linear-gradient(to right bottom, #FF79DA, #9356DC);
+}
+.explorer button:hover {
+    cursor: pointer;
+      font-weight: bold;
+    transform: scale(1.02);
+    transition: .25s;
+    opacity: 0.9;
+  
+}
