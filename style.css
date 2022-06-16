@@ -157,57 +157,53 @@ header {
   border: none;
   border-radius: 2rem;
   background-image: linear-gradient(to right bottom, #FF79DA, #9356DC);
-  box-shadow: 3px 3px 12px 2px rgba(0, 0, 0, 0.31);
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.31);
 }
 .explorer button:hover {
-  transform: scale 1.02;
   cursor: pointer;
-  background-color: rgba(245, 222, 249, 0.5);
-  box-shadow: 7px 7px 15px #ccaef2;
+  transform: scale(1, 1.05);
+  transition: 300ms;
 }
 
-@media (max-width: 767px) {
-  .fonctioning {
-    flex-direction: column;
-  }
-  .fonctioning .icon {
-    /* font-size: 12px ou 0.75em; j'ai choisi d'ajouter "fa-xs" à l'icône */
-    border-radius: 20px;
-    /* cercle */
-    width: 20px;
-    /* bordure */
-    height: 20px;
-    color: white;
-    background-color: #9356DC;
-    float: left;
-    margin: 20px 0;
-    font-size: small;
-    position: absolute;
-  }
-  .fonctioning .bordericon {
-    border: 1px solid transparent;
-  }
-  .fonctioning .sizeicon {
-    padding: 20px 0;
-  }
-  .fonctioning .buttonf {
-    align-items: center;
-    gap: 1rem;
-    width: 300px;
-    height: 60px;
-    border: 1px solid transparent;
-    border-radius: 15px;
-    background-color: #F6F6F6;
-    padding: 0 40px;
-    margin: 20px 0;
-    box-shadow: 3px 3px 12px 2px rgba(0, 0, 0, 0.31);
-  }
-  .fonctioning:hover {
-    transform: scale 1.02;
-    cursor: pointer;
-    background-color: rgba(245, 222, 249, 0.5);
-    box-shadow: 7px 7px 15px #ccaef2;
-  }
+.fonctioning .buttonf {
+  align-items: center;
+  gap: 1.5rem;
+  width: 20rem;
+  height: 3.5rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  background-color: #F6F6F6;
+  padding: 0 2rem;
+  margin: 1.5rem 1rem;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.31);
+}
+.fonctioning .icon {
+  /* font-size: 12px ou 0.75em; j'ai choisi d'ajouter "fa-xs" à l'icône */
+  border-radius: 2rem;
+  /* cercle */
+  width: 1.5rem;
+  /* bordure */
+  height: 1.5rem;
+  color: white;
+  background-color: #9356DC;
+  margin: 2.5rem 0;
+  font-size: 1.3rem;
+  float: left;
+  position: absolute;
+}
+.fonctioning i {
+  color: #7E7E7E;
+}
+.fonctioning .bordericon {
+  border: 1px solid transparent;
+}
+.fonctioning .sizeicon {
+  padding: 1.5rem 0;
+}
+.fonctioning :hover {
+  cursor: pointer;
+  transform: scale(1, 1.05);
+  transition: 300ms;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,47 +1,58 @@
 @use "../utils/box-shadow";
 @use "../utils/hover-base";
+@use "../utils/variables";
+@use "../utils/colors";
 
 
 .fonctioning {
-@media (max-width: 767px) {
-    flex-direction: column;
-& .icon {
+
+    & .buttonf {
+        align-items: center;
+        gap: 1.5 * variables.$fonctioning-dim;
+        width: 20 * variables.$fonctioning-dim;
+        height: 3.5 * variables.$fonctioning-dim;
+        border: 1px solid transparent;
+        //border-radius: 1rem;
+        border-radius: 1 * variables.$fonctioning-dim;
+        background-color: #F6F6F6;
+       // padding: 1.5rem 2rem; 
+        padding: 0  2 * variables.$fonctioning-dim;
+        //box-shadow: 6px 5px 15px #D8D8D8;
+        margin: 1.5 * variables.$fonctioning-dim 1 * variables.$fonctioning-dim;
+        @include box-shadow.box-shad;  
+    }
+    & .icon {
     /* font-size: 12px ou 0.75em; j'ai choisi d'ajouter "fa-xs" à l'icône */
-    border-radius: 20px;
+    border-radius: 2 * variables.$fonctioning-dim;
     /* cercle */
-    width: 20px;
+    width: 1.5 * variables.$fonctioning-dim;
     /* bordure */
-    height: 20px;
+    height: 1.5 * variables.$fonctioning-dim;
     color: white;
-    background-color: #9356DC;
+    background-color: colors.$purple;
+    margin: 2.5 * variables.$fonctioning-dim 0;
+    font-size: 1.3 * variables.$fonctioning-dim ;
     float: left;
-    margin: 20px 0;
-    font-size: small;
     position: absolute;
+}
+& i {
+    color: colors.$lightgrey;
 }
 & .bordericon {
     border: 1px solid transparent;
 }
 & .sizeicon {
-    padding: 20px 0;
+    padding: 1.5 * variables.$fonctioning-dim 0;
 }
-.buttonf {
-    align-items: center;
-    gap: 1rem;
-    width: 300px;
-    height: 60px;
-    border: 1px solid transparent;
-    border-radius: 15px;
-    background-color: #F6F6F6;
-    padding: 0 40px;
-    //box-shadow: 6px 5px 15px #D8D8D8;
-    margin: 20px 0;
-    @include box-shadow.box-shad;   
-}
-&:hover {
+& :hover {
     @include hover-base.hover-effect;
-   // cursor: pointer;
+}
+}
+
+
+// cursor: pointer;
    // background-color: rgb(245, 222, 249, 0.5);
    // box-shadow: 7px 7px 15px #ccaef2;
-}
-}}   
+   // @media (max-width: 767px) {
+   // flex-direction: column;}
+
