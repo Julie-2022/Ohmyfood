@@ -1,8 +1,109 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 *,
 ::before ::after {
   box-sizing: border-box;
+}
+
+/* Général */
+.flexstart {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexend {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flexaround {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flexbetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexcolumncenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexcolumn {
+  display: flex;
+  align-items: flex-start;
+}
+
+.flexcolumnaround {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.flexcolumnbetween {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flexwrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.alignitems {
+  display: flex;
+  align-items: center;
+}
+
+/* Couleurs et styles généraux */
+.textbold {
+  font-weight: bold;
+}
+
+.decorationNone {
+  text-decoration: none;
+}
+
+.bordernone {
+  border: none;
+}
+
+.colorpurple {
+  color: #9356DC;
+}
+
+.colorpink {
+  color: #FF79DA;
+}
+
+.colorgrey {
+  color: #7E7E7E;
+}
+
+.colorblack {
+  color: #1C1C1C;
+}
+
+.backgrey {
+  background-color: #F6F6F6;
+}
+
+.backgrey2 {
+  background-color: #EAEAEA;
+  box-shadow: inset 0 3px 2px #D5D5D5;
 }
 
 /* Police Logo + titres */
@@ -11,6 +112,13 @@ body {
   margin: 0px;
 }
 
+main {
+  padding: 0 1rem;
+}
+
+/*i {
+    font-size: 1.1em;
+}*/
 header {
   font-family: "Shrikhand", cursive;
   margin: 0px;
@@ -18,7 +126,7 @@ header {
   padding: 0.3rem;
 }
 
-main .location {
+.location {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,36 +136,78 @@ main .location {
   box-shadow: inset 0 3px 2px #D5D5D5;
   padding: 0.5rem;
 }
+.location i {
+  font-size: 1.5rem;
+}
 
 /* Zone Explorer */
 .explorer {
   text-align: center;
 }
-
 .explorer h2 {
   margin-top: 2rem;
   font-size: 1.5rem;
 }
-
 .explorer p {
   font-size: 1rem;
 }
-
 .explorer button {
   color: white;
   padding: 0 20px;
   border: none;
   border-radius: 2rem;
-  box-shadow: 3px 3px 12px 2px rgba(0, 0, 0, 0.31);
   background-image: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  box-shadow: 3px 3px 12px 2px rgba(0, 0, 0, 0.31);
+}
+.explorer button:hover {
+  transform: scale 1.02;
+  cursor: pointer;
+  background-color: rgba(245, 222, 249, 0.5);
+  box-shadow: 7px 7px 15px #ccaef2;
 }
 
-.explorer button:hover {
-  cursor: pointer;
-  font-weight: bold;
-  transform: scale(1.02);
-  transition: 0.25s;
-  opacity: 0.9;
+@media (max-width: 767px) {
+  .fonctioning {
+    flex-direction: column;
+  }
+  .fonctioning .icon {
+    /* font-size: 12px ou 0.75em; j'ai choisi d'ajouter "fa-xs" à l'icône */
+    border-radius: 20px;
+    /* cercle */
+    width: 20px;
+    /* bordure */
+    height: 20px;
+    color: white;
+    background-color: #9356DC;
+    float: left;
+    margin: 20px 0;
+    font-size: small;
+    position: absolute;
+  }
+  .fonctioning .bordericon {
+    border: 1px solid transparent;
+  }
+  .fonctioning .sizeicon {
+    padding: 20px 0;
+  }
+  .fonctioning .buttonf {
+    align-items: center;
+    gap: 1rem;
+    width: 300px;
+    height: 60px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background-color: #F6F6F6;
+    padding: 0 40px;
+    margin: 20px 0;
+    box-shadow: 3px 3px 12px 2px rgba(0, 0, 0, 0.31);
+  }
+  .fonctioning:hover {
+    transform: scale 1.02;
+    cursor: pointer;
+    background-color: rgba(245, 222, 249, 0.5);
+    box-shadow: 7px 7px 15px #ccaef2;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

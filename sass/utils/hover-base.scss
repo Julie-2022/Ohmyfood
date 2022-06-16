@@ -1,0 +1,6 @@
+@mixin hover-effect {
+    transform: scale (1.02);
+    cursor: pointer;
+    background-color: rgb(245, 222, 249, 0.5);
+    box-shadow: 7px 7px 15px #ccaef2;
+}

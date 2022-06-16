@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*,
+::before
+::after {
+    box-sizing: border-box;
+}
+
+/* Général */
+
+.flexstart {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexend {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flexaround {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flexbetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexcolumncenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexcolumn {
+    display: flex;
+    align-items: flex-start;
+}
+
+.flexcolumnaround {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.flexcolumnbetween {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flexwrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.alignitems {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Couleurs et styles généraux */
+.textbold {
+    font-weight: bold;
+}
+
+.decorationNone {
+    text-decoration: none;
+}
+
+.bordernone {
+    border: none;
+}
+
+.colorpurple {
+    color: #9356DC;
+}
+
+.colorpink {
+    color: #FF79DA;
+}
+
+.colorgrey {
+    color: #7E7E7E;
+}
+
+.colorblack {
+    color: #1C1C1C;
+}
+
+.backgrey {
+    background-color: #F6F6F6;
+}
+
+.backgrey2 {
+    background-color: #EAEAEA;
+    box-shadow: inset 0 3px 2px #D5D5D5;
+}
+
+/* Police Logo + titres */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+main {
+    padding: 0 1rem;
+}
+
+/*i {
+    font-size: 1.1em;
+}*/

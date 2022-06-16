@@ -1,0 +1,47 @@
+@use "../utils/box-shadow";
+@use "../utils/hover-base";
+
+
+.fonctioning {
+@media (max-width: 767px) {
+    flex-direction: column;
+& .icon {
+    /* font-size: 12px ou 0.75em; j'ai choisi d'ajouter "fa-xs" à l'icône */
+    border-radius: 20px;
+    /* cercle */
+    width: 20px;
+    /* bordure */
+    height: 20px;
+    color: white;
+    background-color: #9356DC;
+    float: left;
+    margin: 20px 0;
+    font-size: small;
+    position: absolute;
+}
+& .bordericon {
+    border: 1px solid transparent;
+}
+& .sizeicon {
+    padding: 20px 0;
+}
+.buttonf {
+    align-items: center;
+    gap: 1rem;
+    width: 300px;
+    height: 60px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background-color: #F6F6F6;
+    padding: 0 40px;
+    //box-shadow: 6px 5px 15px #D8D8D8;
+    margin: 20px 0;
+    @include box-shadow.box-shad;   
+}
+&:hover {
+    @include hover-base.hover-effect;
+   // cursor: pointer;
+   // background-color: rgb(245, 222, 249, 0.5);
+   // box-shadow: 7px 7px 15px #ccaef2;
+}
+}}   
