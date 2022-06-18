@@ -7,6 +7,31 @@
     box-sizing: border-box;
 }
 
+/* Police Logo + titres */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+main {
+    padding: 0 1rem;
+}
+
+h2 {
+padding: 2rem 0;
+margin:0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*i {
+    font-size: 1.1em;
+}*/
+
 /* Général */
 
 .flexstart {
@@ -108,17 +133,3 @@
     background-color: #EAEAEA;
     box-shadow: inset 0 3px 2px #D5D5D5;
 }
-
-/* Police Logo + titres */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0px;
-}
-
-main {
-    padding: 0 1rem;
-}
-
-/*i {
-    font-size: 1.1em;
-}*/

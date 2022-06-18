@@ -1,0 +1,15 @@
+@use "../utils/colors";
+@use "../base";
+
+
+footer {
+background-color: colors.$dark;
+padding: 1rem 2rem;
+color: white;
+h3 {
+    font-family: "shrikhand", sans-serif;
+    font-weight: 500;
+    padding: 2rem 0 0 0;
+    
+}
+}

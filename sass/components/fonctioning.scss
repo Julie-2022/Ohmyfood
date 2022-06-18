@@ -22,7 +22,6 @@
         @include box-shadow.box-shad;  
     }
     & .icon {
-    /* font-size: 12px ou 0.75em; j'ai choisi d'ajouter "fa-xs" à l'icône */
     border-radius: 2 * variables.$fonctioning-dim;
     /* cercle */
     width: 1.5 * variables.$fonctioning-dim;
@@ -31,12 +30,16 @@
     color: white;
     background-color: colors.$purple;
     margin: 2.5 * variables.$fonctioning-dim 0;
-    font-size: 1.3 * variables.$fonctioning-dim ;
+    font-size: variables.$fonctioning-dim ;
     float: left;
     position: absolute;
+  
+    
+
 }
 & i {
     color: colors.$lightgrey;
+    font-size: 1.2 variables.$fonctioning-dim ;
 }
 & .bordericon {
     border: 1px solid transparent;

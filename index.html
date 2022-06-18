@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <!--Viewport-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-   
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+
     <!-- google font Texte : Roboto -->
-   <!--  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--  <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 
@@ -17,97 +19,154 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
   -->
     <!-- Place your kit's code here / intégration FontAwesome pour les icones -->
-    <script src="https://kit.fontawesome.com/ef26cf91c6.js" crossorigin="anonymous"></script>
-   <!--  <link rel="stylesheet"
+    <script
+      src="https://kit.fontawesome.com/ef26cf91c6.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--  <link rel="stylesheet"
        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
         integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"> -->
-     <!-- stylesheets -->
-     
-     <link rel="stylesheet" href="style.css" />
-        <title>Ohmyfood</title>
-  
-</head>
+    <!-- stylesheets -->
 
-<body>
- <!-- spinner -->
- <div class="spinner"></div>
- <!-- logo -->
- <header>
-     <h1 class="flexcenter">ohmyfood</h1>
- </header>
- <!-- Localisation -->
- <main>
-     <div class="location backgrey2 flexstart flexcenter">
-             <i class="fa-solid fa-location-dot fa-xs"></i>
-             <p>Paris, Belleville</p>
-     </div>
-     <section class="explorer">
-         <div class="backgrey">
-             <h2>Réservez le menu <br> 
-                qui vous convient</h2>
-             <p>Découvrez des restaurants d'exception, <br>
-                selectionnés par nos soins</p>
-             <button class="button">
-                 <p>Explorer nos restaurants</p>
-             </button>
-         </div>
-     </section>
-     <section>
-         <h2>Fonctionnement</h2>
-         <div class="fonctioning flexwrap">
-             <div>
-                 <div class="icon bordericon flexcenter">1</div>
-                 <div class="buttonf flexstart">
-                     <div class="sizeicon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-                     <p>Choisissez un restaurant</p>
-                 </div>
-             </div>
-             <div>
-                 <div class="icon bordericon flexcenter">2</div>
-                 <div class="buttonf flexstart">
-                     <div class="sizeicon"><i class="fa-solid fa-list"></i></div>
-                     <p>Composez votre menu</p>
-                 </div>
-             </div>
-             <div>
-                 <div class="icon bordericon flexcenter">3</div>
-                 <div class="buttonf flexstart">
-                     <div class="sizeicon"><i class="fa-solid fa-store"></i></div>
-                     <p>Dégustez au restaurant</p>
-                 </div>
-             </div>
-         </div>
-     </section>
-     <section class="backgrey">
-         <h2>Restaurants</h2>
-         <div class="blockrestau">
-             <a class="decorationNone cardrestau">
-                 <div class="cardrestau">
-                     <div class="cardnew flexcenter">
-                         <p>Nouveau</p>
-                     </div>
+    <link rel="stylesheet" href="style.css" />
+    <title>Ohmyfood</title>
+  </head>
 
-                     <div>
-                         <img class="imgrestau" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                             alt="La palette du goût">
-                     </div>
-                     <div class="detailsrestau flexstart flexbetween">
-                         <div>
-                             <div class="textbold">La palette du goût</div>
-                             <div>Ménilmontant</div>
-                         </div>
-                         <div>heart</div>
-                     </div>
-                 </div>
-             </a>
-         </div>
-         <div></div>
-         <div></div>
-         <div></div>
-     </section>
+  <body>
+    <!-- spinner -->
+    <div class="spinner"></div>
+    <!-- logo -->
+    <header>
+      <h1>ohmyfood</h1>
+    </header>
+    <!-- Localisation -->
+    <main>
+      <div class="location">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Paris, Belleville</p>
+      </div>
+      <section class="explorer">
+        <div class="backgrey">
+          <h2>
+            Réservez le menu <br />
+            qui vous convient
+          </h2>
+          <p>
+            Découvrez des restaurants d'exception, <br />
+            selectionnés par nos soins
+          </p>
+          <button class="button">
+            <p>Explorer nos restaurants</p>
+          </button>
+        </div>
+      </section>
+      <section>
+        <h2>Fonctionnement</h2>
+        <div class="fonctioning flexwrap">
+          <div>
+            <div class="icon bordericon flexcenter">1</div>
+            <div class="buttonf flexstart">
+              <div class="sizeicon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <p>Choisissez un restaurant</p>
+            </div>
+          </div>
+          <div>
+            <div class="icon bordericon flexcenter">2</div>
+            <div class="buttonf flexstart">
+              <div class="sizeicon"><i class="fa-solid fa-list"></i></div>
+              <p>Composez votre menu</p>
+            </div>
+          </div>
+          <div>
+            <div class="icon bordericon flexcenter">3</div>
+            <div class="buttonf flexstart">
+              <div class="sizeicon colorpurple">
+                <i class="fa-solid fa-store"></i>
+              </div>
+              <p>Dégustez au restaurant</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
- </main>
- <footer></footer>
-</body>
+      <section class="restaurants">
+        <h2>Restaurants</h2>
+        <div class="blockrestau">
+          <a>
+            <div class="card">
+              <!--   <div class="card__new flexcenter">
+                <p>Nouveau</p>
+              </div> -->
+              <div class="card__img card__img-1 new">
+                <!--   <img
+                  class="card__img"
+                  src="assets/card-1.jpg"
+                  alt="La palette du goût"
+              />  -->
+              </div>
+              <div class="card__details flexstart flexbetween">
+                <div>
+                  <div class="textbold">La palette du goût</div>
+                  <div>Ménilmontant</div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </a>
 
+          <a>
+            <div class="card">
+              <!--   <div class="card__new flexcenter">
+                <p>Nouveau</p>
+              </div> -->
+              <div class="card__img card__img-2 new"></div>
+              <div class="card__details flexstart flexbetween">
+                <div>
+                  <div class="textbold">La note enchantée</div>
+                  <div>Charonne</div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </a>
+
+          <a>
+            <div class="card">
+              <div class="card__img card__img-3"></div>
+              <div class="card__details flexstart flexbetween">
+                <div>
+                  <div class="textbold">À la françaiset</div>
+                  <div>Cité Rouge</div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </a>
+
+          <a>
+            <div class="card">
+              <div class="card__img card__img-4"></div>
+              <div class="card__details flexstart flexbetween">
+                <div>
+                  <div class="textbold">Le Délice des sens</div>
+                  <div>Folie-Méricourt</div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h3>ohmyfood</h3>
+
+      <p><i class="fa-solid fa-utensils"></i>Proposer un restaurant</p>
+      <p>Devenir partenaire</p>
+      <p>Mentions légales</p>
+      <a href="mailto:julyzebda@gmail.com">Contact</a>
+    </footer>
+  </body>
 </html>
