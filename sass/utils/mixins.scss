@@ -13,7 +13,7 @@
     transition: 300ms;
 }
 @mixin gradient($opacity: 0.9) {
-    background-image: linear-gradient(to right bottom,
+    background-image: linear-gradient(to right top,
      #FF79DA, #9356DC);
 }
 
@@ -28,7 +28,7 @@
         content: "\f004";
         font-size: 2rem;
         position: absolute;
-        transform: translateY(-50%);
+        transform: translateY(-50%) scale(1.1);
         color: transparent;
         right: 1rem;
         bottom: 0.5rem;
