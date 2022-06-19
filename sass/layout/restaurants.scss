@@ -78,22 +78,41 @@
         font-size: large;
         font-weight: 300;
        // line-height: 137%;
- //   &::before {
-     //       @include mixins.heart; }
-        
-        &::after {
-            @include mixins.heart;
-            @include mixins.gradient;
-            opacity: 0;
-            font-weight: 900;
+     ////   &::before {
+            //  &:first {
+            //@include mixins.heart;
+        .fa {
+            position: relative;
+            right: 1rem;
+            bottom: 0.5rem;
+        }
+        .fa:before {
+            content:"/f004";
+           
+        }    
+ 
+       &::after {
+         //  &:first child {
+           @include mixins.heart; 
+           @include mixins.gradient;
+           opacity: 0;
+           color: transparent;
+           font-weight: 900;
+       }
+       // &:last-child {
+        &:hover::after {              
+            opacity: 1; 
+            position: absolute;  
+            right: 1rem;
+            bottom: 0.5rem;
+            display: inline-block;
            }
-    
+           
        
-           &:hover::after {
-            opacity: 1;
+         
            }
          }
-        }  
+        
     
 
 
