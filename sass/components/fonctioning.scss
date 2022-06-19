@@ -3,13 +3,19 @@
 @use "../utils/variables";
 @use "../utils/colors";
 
+.blockfonction {
+    padding-bottom: 2rem;
+  h2 {
+    padding-left: 1rem;
+}  
+}
 
 .fonctioning {
 
     & .buttonf {
         align-items: center;
         gap: 1.5 * variables.$fonctioning-dim;
-        width: 20 * variables.$fonctioning-dim;
+        width: 17 * variables.$fonctioning-dim;
         height: 3.5 * variables.$fonctioning-dim;
         border: 1px solid transparent;
         //border-radius: 1rem;
@@ -20,6 +26,9 @@
         //box-shadow: 6px 5px 15px #D8D8D8;
         margin: 1.5 * variables.$fonctioning-dim 1 * variables.$fonctioning-dim;
         @include box-shadow.box-shad;  
+        & :hover {
+        @include hover-base.hover-effect1;
+        }
     }
     & .icon {
     border-radius: 2 * variables.$fonctioning-dim;
@@ -47,9 +56,7 @@
 & .sizeicon {
     padding: 1.5 * variables.$fonctioning-dim 0;
 }
-& :hover {
-    @include hover-base.hover-effect;
-}
+
 }
 
 

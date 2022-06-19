@@ -15,7 +15,13 @@ body {
 }
 
 main {
-  padding: 0 1rem;
+  margin: 0;
+  padding: 0 7rem;
+}
+@media (max-width: 1000px) {
+  main {
+    padding: 0 1rem;
+  }
 }
 
 h2 {
@@ -157,19 +163,22 @@ header {
   text-align: center;
 }
 .explorer h2 {
-  margin-top: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 0.5rem;
   font-size: 1.5rem;
 }
 .explorer p {
   font-size: 1rem;
+  font-weight: lighter;
 }
 .explorer button {
   color: white;
-  padding: 0 20px;
+  padding: 0 2rem;
+  margin-bottom: 4rem;
   border: none;
   border-radius: 2rem;
   background-image: linear-gradient(to right bottom, #FF79DA, #9356DC);
-  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.31);
+  box-shadow: 0px 3px 16px -4px rgba(0, 0, 0, 0.61);
 }
 .explorer button:hover {
   cursor: pointer;
@@ -179,14 +188,22 @@ header {
 
 .restaurants {
   background-color: #f6f6f6;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
+}
+.restaurants h2 {
+  padding-left: 1rem;
+  display: grid;
+  grid-template-columns: 500px;
+  grid-template-rows: auto;
+  grid-template-areas: "header";
 }
 
 .blockrestau {
+  width: 100%;
   border-radius: 1rem;
   display: grid;
-  grid-template-columns: repeat(2, 45%);
-  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 50%);
+  row-gap: 3rem;
 }
 @media (max-width: 1000px) {
   .blockrestau {
@@ -194,18 +211,30 @@ header {
     grid-template-rows: repeat(2, 1fr);
   }
 }
+@media (min-width: 1440px) {
+  .blockrestau {
+    row-gap: 6rem;
+  }
+}
 
 .card {
-  width: 20.84rem;
+  width: 80%;
   background-color: #FFFFFF;
   box-shadow: 2px 2px 15px #D8D8D8;
   margin: auto;
   border-radius: 1rem;
 }
-.card :hover {
-  cursor: pointer;
-  transform: scale(1, 1.05);
-  transition: 300ms;
+@media (max-width: 1000px) {
+  .card {
+    min-width: 20rem;
+    max-width: 25rem;
+  }
+}
+@media (min-width: 1440px) {
+  .card {
+    max-width: 30rem;
+    width: 75%;
+  }
 }
 .card__img {
   width: 100%;
@@ -226,7 +255,7 @@ header {
   background-image: url(../../assets/card-4.jpg);
 }
 .card__details {
-  padding: 2% 4%;
+  padding: 1rem;
   font-size: large;
   font-weight: 300;
   line-height: 137%;
@@ -265,9 +294,15 @@ body {
 }
 
 main {
-  padding: 0 1rem;
+  margin: 0;
+  padding: 0 7rem;
 }
 
+@media (max-width: 1000px) {
+  main {
+    padding: 0 1rem;
+  }
+}
 h2 {
   padding: 2rem 0;
   margin: 0;
@@ -383,26 +418,47 @@ a {
 
 footer {
   background-color: #353535;
-  padding: 1rem 2rem;
+  padding: 2rem;
   color: white;
 }
 footer h3 {
   font-family: "shrikhand", sans-serif;
-  font-weight: 500;
-  padding: 2rem 0 0 0;
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+}
+footer p {
+  margin: 0.5rem 0 0.2rem 0;
+}
+footer .fa-utensils:before {
+  padding: 0 1rem 0 0;
+  font-size: small;
+}
+footer .fa-handshake-angle:before {
+  padding: 0 0.8rem 0 0;
+  font-size: small;
+}
+
+.blockfonction {
+  padding-bottom: 2rem;
+}
+.blockfonction h2 {
+  padding-left: 1rem;
 }
 
 .fonctioning .buttonf {
   align-items: center;
   gap: 1.5rem;
-  width: 20rem;
+  width: 17rem;
   height: 3.5rem;
   border: 1px solid transparent;
   border-radius: 1rem;
   background-color: #F6F6F6;
   padding: 0 2rem;
   margin: 1.5rem 1rem;
-  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.31);
+  box-shadow: 0px 3px 16px -4px rgba(0, 0, 0, 0.61);
+}
+.fonctioning .buttonf :hover {
+  background-color: #F5EDFF;
 }
 .fonctioning .icon {
   border-radius: 2rem;
@@ -426,11 +482,6 @@ footer h3 {
 }
 .fonctioning .sizeicon {
   padding: 1.5rem 0;
-}
-.fonctioning :hover {
-  cursor: pointer;
-  transform: scale(1, 1.05);
-  transition: 300ms;
 }
 
 /*# sourceMappingURL=style.css.map */

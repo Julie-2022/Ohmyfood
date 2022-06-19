@@ -4,66 +4,88 @@
 
 .restaurants {
     background-color: #f6f6f6;
-    padding-bottom: 2rem;
-   
+    padding-bottom: 3rem;
+    h2 {
+        padding-left: 1rem;
+        display: grid;
+        grid-template-columns: 500px;
+        grid-template-rows: auto;
+        grid-template-areas: "header";
+    }
 }
+
 .blockrestau {
-  //  width: 97%;
-  //  height: auto;
-  //  padding: 5px 25px 25px 25px;
+    width: 100%;
+    //  width: 97%;
+    //  height: auto;
+    //  padding: 5px 25px 25px 25px;
     border-radius: 1rem;
     display: grid;
-    grid-template-columns: repeat(2, 45%);
-  //  grid-column-gap: 2rem;
-    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 50%);
+    //  grid-column-gap: 2rem;
+    // grid-gap: 2rem;
+    row-gap: 3rem;
     @media (max-width: variables.$breakpoint) {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
+    @media (min-width: variables.$breakpoint2) {
+        row-gap: 6rem;
+    }
 }
 .card {
-    width: 20.84rem;
+    width: 80%;
+    //width: 20.84rem;
     //width: 333px;
-   // height: 15rem;
+    // height: 15rem;
     //height: 250px;
-    background-color: #FFFFFF; 
+    background-color: #FFFFFF;
     box-shadow: 2px 2px 15px #D8D8D8;
     margin: auto;
     border-radius: 1rem;
-    & :hover {
-        @include hover-base.hover-effect;
+    @media (max-width:variables.$breakpoint) {
+        min-width: 20rem;
+        max-width: 25rem;
     }
-&__img {
-    width: 100%;
-    height: 11rem;
-    border-radius: 1rem 1rem 0 0;
-    background-size: cover;
-}
-@for $i from 1 through 4 {
-&__img-#{$i} {
-    background-image: url(../../assets/card-#{$i}.jpg);
+    @media (min-width: variables.$breakpoint2) {
+        max-width: 30rem;
+        width: 75%;
     }
-}
-// = &__img-1 {background-image: url(../../assets/card-1.jpg);}
-//   &__img-2 {background-image: url(../../assets/card-2.jpg);}
-//   &__img-3 {background-image: url(../../assets/card-3.jpg);}
-//   &__img-4 {background-image: url(../../assets/card-4.jpg);}
-&__details {
-    padding: 2% 4%;
-    font-size: large;
-    font-weight: 300;
-    line-height: 137%;
-    i {
-        font-size: 2rem;
-       // position: absolute;
+   // & :hover {
+  //      @include hover-base.hover-effect;
+  //  }
+    &__img {
+        width: 100%;
+        height: 11rem;
+        border-radius: 1rem 1rem 0 0;
+        background-size: cover;
     }
-}
+    @for $i from 1 through 4 {
+        &__img-#{$i} {
+            background-image: url(../../assets/card-#{$i}.jpg);
+        }
+    }
+    // = &__img-1 {background-image: url(../../assets/card-1.jpg);}
+    //   &__img-2 {background-image: url(../../assets/card-2.jpg);}
+    //   &__img-3 {background-image: url(../../assets/card-3.jpg);}
+    //   &__img-4 {background-image: url(../../assets/card-4.jpg);}
+    &__details {
+        padding: 1rem;
+        font-size: large;
+        font-weight: 300;
+        line-height: 137%;
+        i {
+            font-size: 2rem;
+            // position: absolute;
+        }
+    }
 
 }
 
 .new {
     position: relative;
 }
+
 .new::before {
     content: "Nouveau";
     position: absolute;
@@ -77,5 +99,6 @@
     right: 1rem;
     top: 1rem;
 }
+
 
 

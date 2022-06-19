@@ -5,15 +5,19 @@
 .explorer {
     text-align: center;
 & h2 {
-    margin-top: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 0.5rem;
     font-size: 1.5rem;
-}
+}   
 & p {
     font-size: 1rem;
+    font-weight: lighter;
+  //  margin-bottom: 2rem;
 }
 & button {
     color: white;
-    padding: 0 20px;
+    padding: 0 2rem;
+    margin-bottom: 4rem;
     border: none;
     border-radius: 2rem;
    // box-shadow: 3px 3px 12px 2px rgba(0,0,0,0.31);
@@ -21,7 +25,7 @@
     @include box-shadow.box-shad;
 }
 & button:hover {
-    @include hover-base.hover-effect;
+    @include hover-base.hover-effect2;
     //cursor: pointer;
     //font-weight: bold;
     //transform: scale(1.02);
