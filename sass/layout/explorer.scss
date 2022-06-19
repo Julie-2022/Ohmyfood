@@ -1,6 +1,5 @@
 /* Zone Explorer */
-@use "../utils/box-shadow";
-@use "../utils/hover-base";
+@use "../utils/mixins";
 
 .explorer {
     text-align: center;
@@ -21,11 +20,11 @@
     border: none;
     border-radius: 2rem;
    // box-shadow: 3px 3px 12px 2px rgba(0,0,0,0.31);
-    background-image: linear-gradient(to right bottom, #FF79DA, #9356DC);
-    @include box-shadow.box-shad;
+    @include mixins.gradient;
+    @include mixins.box-shad;
 }
 & button:hover {
-    @include hover-base.hover-effect2;
+    @include mixins.hover-effect2;
     //cursor: pointer;
     //font-weight: bold;
     //transform: scale(1.02);
