@@ -72,50 +72,35 @@
     //   &__img-3 {background-image: url(../../assets/card-3.jpg);}
     //   &__img-4 {background-image: url(../../assets/card-4.jpg);}
     &__details {
-        width:90%;
+        width: 90%;
         height: 25%;
         padding-left: 1rem;
         font-size: large;
         font-weight: 300;
-       // line-height: 137%;
-     ////   &::before {
-            //  &:first {
-            //@include mixins.heart;
-      //  .fa {
-      //      position: relative;
     
-            .fa-regular {
+        .fa-thin {
                 position: relative;
                 font-family: "Font Awesome 6 Free";
-                font-weight: 400;
-                font-size: 1.8rem;
-                right: -0.5rem;
-                bottom: 2px;
-            }
-       
+                font-size: 1.7rem;
+             
+              
         .fa:before {
             content:"/f004";
-           //font-style: thin;
-     ////  font-size: 2rem;
-//right: 1rem;
-//bottom: 0.5rem;
-
-
         }    
  
        &::after {
          //  &:first child {
-           @include mixins.heart; 
+           @include mixins.heart ($opacity: 0, $font-weight: 900, $color: transparent); 
            @include mixins.gradient;
-           opacity: 0;
-           color: transparent;
-           font-weight: 900;
+         //  opacity: 0;
+           //color: transparent;
+          // font-weight: 900;
        }
        // &:last-child {
         &:hover::after {              
             opacity: 1; 
-            transform: translateY(-50%) scale(1.1);
-          
+           // transform: translateY(-50%) scale(1.1);
+           } 
            
             
            }

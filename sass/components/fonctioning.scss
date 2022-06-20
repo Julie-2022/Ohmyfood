@@ -16,18 +16,21 @@
         gap: 1.5 * variables.$fonctioning-dim;
         width: 17 * variables.$fonctioning-dim;
         height: 3.5 * variables.$fonctioning-dim;
+        // padding: 1.5rem 2rem; 
+        padding: 0  2 * variables.$fonctioning-dim;
+        //box-shadow: 6px 5px 15px #D8D8D8;
+        margin: 1.5 * variables.$fonctioning-dim 1 * variables.$fonctioning-dim;
         border: 1px solid transparent;
         //border-radius: 1rem;
         border-radius: 1 * variables.$fonctioning-dim;
         background-color: #F6F6F6;
-       // padding: 1.5rem 2rem; 
-        padding: 0  2 * variables.$fonctioning-dim;
-        //box-shadow: 6px 5px 15px #D8D8D8;
-        margin: 1.5 * variables.$fonctioning-dim 1 * variables.$fonctioning-dim;
-        @include mixins.box-shad;  
-        & :hover {
+        @include mixins.box-shad1;  
+        
+        &:hover {
         @include mixins.hover-effect1;
-        }
+        @include mixins.box-shad2;
+       }
+       
     }
     & .icon {
     border-radius: 2 * variables.$fonctioning-dim;
