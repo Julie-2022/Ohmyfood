@@ -1,0 +1,57 @@
+@use "./utils/mixins";
+@use "./utils/variables";
+
+img {
+    width: 100%;
+    height: 15rem;
+    border-radius: 0 0 -15px -15px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+
+}
+
+//.header-radius {
+//    position:absolute;
+//    border: 1px solid #888;
+//    height: 40px;
+//    border-radius: 50%;
+//}
+
+.fa-thin {
+    position: relative;
+    font-family: "Font Awesome 6 Free";
+    font-size: 1.7rem;
+    .fa:before {
+        content: "/f004";
+    }
+    &::after {
+        @include mixins.heart ($opacity: 0, $font-weight: 900, $color: transparent);
+        @include mixins.gradient;
+    }
+    &:hover::after {
+        opacity: 1;
+    }
+
+
+}
+
+.menu {
+
+    .buttonM {
+        align-items: center;
+        gap: 1.5 * variables.$fonctioning-dim;
+        width: 17 * variables.$fonctioning-dim;
+        height: 3.5 * variables.$fonctioning-dim;
+        // padding: 1.5rem 2rem; 
+        padding: 0 0.5 * variables.$fonctioning-dim;
+        //box-shadow: 6px 5px 15px #D8D8D8;
+        margin: 1.5 * variables.$fonctioning-dim 1 * variables.$fonctioning-dim;
+        border: 1px solid transparent;
+        //border-radius: 1rem;
+        border-radius: 1 * variables.$fonctioning-dim;
+        background-color: #F6F6F6;
+        @include mixins.box-shad1;
+    }
+
+}
