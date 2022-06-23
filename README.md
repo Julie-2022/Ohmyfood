@@ -18,8 +18,8 @@ En cas de souci :
 ==> création de Node-modules + package-lock.json + style.css.map
 
 Grace au script dans package.json (ligne 7) : "sass": "sass style.scss style.css" 
-on peut utiliser : npm run sass pour compliler en auto (Ctrl-C to stop)
 
+=> on peut utiliser : npm run sass pour compliler en auto (Ctrl-C to stop)
 
 Cloner le projet de quelqu'un d'autre :
 1. git clone
