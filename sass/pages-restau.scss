@@ -3,27 +3,28 @@
 
 img {
     width: 100%;
-    height: 15rem;
-    border-radius: 0 0 -15px -15px;
+    height: 15rem;// 60vh
     object-fit: cover;
-    object-position: center;
+    object-position: center; // center bottom
     overflow: hidden;
 
 }
 
-//.header-radius {
-//    position:absolute;
-//    border: 1px solid #888;
-//    height: 40px;
-//    border-radius: 50%;
-//}
+.restau-head { 
+    padding: 0 2rem;
+    h2 {
+    font-family: "Shrikhand", "cursive";
+    
+}
+}   
 
 .fa-thin {
     position: relative;
     font-family: "Font Awesome 6 Free";
-    font-size: 1.7rem;
+    font-size: 2rem;
     .fa:before {
         content: "/f004";
+      //  @include mixins.heart;
     }
     &::after {
         @include mixins.heart ($opacity: 0, $font-weight: 900, $color: transparent);
@@ -32,8 +33,6 @@ img {
     &:hover::after {
         opacity: 1;
     }
-
-
 }
 
 .menu {
@@ -51,7 +50,7 @@ img {
         //border-radius: 1rem;
         border-radius: 1 * variables.$fonctioning-dim;
         background-color: #F6F6F6;
-        @include mixins.box-shad1;
+        @include mixins.shad;
     }
 
 }

@@ -1,5 +1,6 @@
 /* Zone Explorer */
 @use "../utils/mixins";
+@use "../components/buttons";
 
 .explorer {
     text-align: center;
@@ -14,17 +15,13 @@
   //  margin-bottom: 2rem;
 }
 & button {
-    color: white;
-    padding: 0 2rem;
-    margin-bottom: 4rem;
-    border: none;
-    border-radius: 2rem;
+    @include buttons.button;
    // box-shadow: 3px 3px 12px 2px rgba(0,0,0,0.31);
     @include mixins.gradient;
-    @include mixins.box-shad1;
+    @include mixins.shad;
 }
 & button:hover {
-    @include mixins.hover-effect2;
+    @include mixins.hover-explorer;
     //cursor: pointer;
     //font-weight: bold;
     //transform: scale(1.02);
