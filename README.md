@@ -10,11 +10,11 @@ et donc libérer de l'espace
 7- sass -v : pour vérifier s'il y est 
 
 En cas de souci : 
-Suppr Node-modules + package-lock.json
-npm remove sass
-npm install sass
-sass -v
-sass style.scss style.css (aprés avoir créer 1 fichier scss nommé : style.scss)
+1. Suppr Node-modules + package-lock.json
+2. npm remove sass
+3. npm install sass
+4. sass -v
+5. sass style.scss style.css (aprés avoir créer 1 fichier scss nommé : style.scss)
 ==> création de Node-modules + package-lock.json + style.css.map
 
 Grace au script dans package.json (ligne 7) : "sass": "sass style.scss style.css" 
@@ -28,6 +28,6 @@ Cloner le projet de quelqu'un d'autre :
 
 
 Pendant le projet pour envoyer sur GitHub :
-git add --all && git commit -m "explication étapes réalisées"
-git push
+1- git add --all && git commit -m "explication étapes réalisées"
+2- git push
 
