@@ -63,14 +63,9 @@
         }
      //  &__img-2 {
      //   background-position: center bottom;
-     //   } 
-        
+     //   }     
     }
-    // = &__img-1 {background-image: url(../../assets/card-1.jpg);}
-    //   &__img-2 {background-image: url(../../assets/card-2.jpg);}
-    //   &__img-3 {background-image: url(../../assets/card-3.jpg);}
-    //   &__img-4 {background-image: url(../../assets/card-4.jpg);}
-
+    
     &__details {
         width: 90%;
         height: 25%;
@@ -79,19 +74,11 @@
         position: relative;
         padding-left: 1rem;
         position:relative;
-    
-        .fa-thin {
-        .fa:before {
-            @include mixins.heart;
-        }    
-       &::after {
-         //  &:first child {
-           @include mixins.heart ($opacity: 0, $font-weight: 900, $color: transparent); 
-           @include mixins.gradient;
-       }
-       // &:last-child {
+.fa-thin {
+    @include mixins.heart ($opacity: 0, $font-weight: 900, $color: transparent);
         &:hover {   
         @include mixins.hover-heart;  
+        @include mixins.gradient;
         } 
        }
     }
