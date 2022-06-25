@@ -47,7 +47,10 @@ transition: 2s;
         background-clip: text;
         -webkit-background-clip: text;
         opacity: $opacity;
-        transition: all 300ms ease-in-out;
+      //  transition-property: opacity, bottom, top;
+      //  transition-duration: 4s;
+      //  transition-delay: 2s;
+      //  transition: all 300ms ease-in-out;
 }
 
 @mixin hover-heart {

@@ -4,42 +4,44 @@
 .banner img {
     position: relative;
     width: 100%;
-    height: 15rem;// 60vh
+    height: 40vh;
     object-fit: cover;
-    object-position: center bottom; // center
+    object-position: center 60%;
     overflow: hidden;
 
 }
 
 .restau-head { 
    // position: absolute;
-    padding: 0 1rem;
+    padding: 0 5%;
     margin-top: 0px;
     border-radius: 2rem 2rem 0 0;
     background: white;
     h2 {
     font-family: "Shrikhand", "cursive";
-   // @include mixins.heart;
 
 }
 }   
 
 .fa-thin {
-    position: relative;
-    font-family: "Font Awesome 6 Free";
-    font-size: 2rem;
-    .fa:before {
-        content: "/f004";
-      //@include mixins.heart;
-    }
-    &::after {
-        @include mixins.heart ($opacity: 0, $font-weight: 900, $color: transparent);
-        @include mixins.gradient;
-    }
-    &:hover::after {
-        opacity: 1;
-    }
+    padding-right: 10%;
+    @include mixins.heart;
+    &:hover {
+    @include mixins.heart ($opacity: 0, $font-weight: 900, $color: transparent);
+    @include mixins.hover-heart;
+    @include mixins.gradient;
 }
+}
+ 
+ 
+ //&::after {
+  //      @include mixins.heart ($opacity: 0, $font-weight: 900, $color: transparent);
+ //       @include mixins.gradient;
+ //   }
+ //   &:hover::after {
+ //       opacity: 1;
+  //  }
+//}
 
 .menu {
 
