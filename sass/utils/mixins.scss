@@ -17,12 +17,13 @@ background-color: #F5EDFF;
     cursor: pointer;
     transform: scale(1, 1.05);
     transition: 300ms;
+    opacity: 0.9;
 }
 
 @mixin hover-card {
 cursor: pointer;
-transform: scale(1, 1.05);
-transition: 300ms;
+transform: scale(1.03, 1) translateY(1%);
+transition: 2s;
 }
 
 @mixin gradient($opacity: 0.9) {
@@ -49,3 +50,8 @@ transition: 300ms;
         transition: all 300ms ease-in-out;
 }
 
+@mixin hover-heart {
+    opacity: 1;
+    transform: scale(1, 1.02);
+    transition: 300ms;
+}

@@ -37,7 +37,8 @@
     margin: auto;
     border-radius: 1rem;
     @include mixins.shad;
-    @include mixins.hover-card;
+    &:hover {
+        @include mixins.hover-card;}
     @media (max-width:variables.$breakpoint) {
         min-width: 20rem;
         max-width: 25rem;
@@ -45,6 +46,7 @@
     @media (min-width: variables.$breakpoint2) {
         max-width: 30rem;
         width: 75%;
+
     }    
     &__img {
         width: 100%;
@@ -56,22 +58,18 @@
    
     @for $i from 1 through 4 {
        &__img-#{$i} {
-           background-image: url(../../assets/card-#{$i}.jpg);
+        background-image: url(../../assets/card-#{$i}.jpg);
         background-position: bottom;
         }
+     //  &__img-2 {
+     //   background-position: center bottom;
+     //   } 
+        
     }
     // = &__img-1 {background-image: url(../../assets/card-1.jpg);}
     //   &__img-2 {background-image: url(../../assets/card-2.jpg);}
     //   &__img-3 {background-image: url(../../assets/card-3.jpg);}
     //   &__img-4 {background-image: url(../../assets/card-4.jpg);}
-
-  
-  
-//  @if $i == 3 {   
-//  &__img-#{$i} {
-//      background-position: bottom 38% right;
-//   }
-//  }} 
 
     &__details {
         width: 90%;
@@ -80,14 +78,11 @@
         font-weight: 300;
         position: relative;
         padding-left: 1rem;
+        position:relative;
     
         .fa-thin {
-        position:relative;
-        font-family: "Font Awesome 6 Free";
-        font-size: 2rem;      
         .fa:before {
-            content:"/f004";
-          //  @include mixins.heart;
+            @include mixins.heart;
         }    
        &::after {
          //  &:first child {
@@ -95,10 +90,9 @@
            @include mixins.gradient;
        }
        // &:last-child {
-        &:hover::after {              
-            opacity: 1; 
-           // transform: translateY(-50%) scale(1.1);
-           } 
+        &:hover {   
+        @include mixins.hover-heart;  
+        } 
        }
     }
 }    

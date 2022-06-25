@@ -16,16 +16,10 @@
 }
 & button {
     @include buttons.button;
-   // box-shadow: 3px 3px 12px 2px rgba(0,0,0,0.31);
     @include mixins.gradient;
     @include mixins.shad;
 }
 & button:hover {
     @include mixins.hover-explorer;
-    //cursor: pointer;
-    //font-weight: bold;
-    //transform: scale(1.02);
-   // transition: .25s;
-   // opacity: 0.9;
 }
 }

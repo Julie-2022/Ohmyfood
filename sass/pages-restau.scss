@@ -1,20 +1,26 @@
 @use "./utils/mixins";
 @use "./utils/variables";
 
-img {
+.banner img {
+    position: relative;
     width: 100%;
     height: 15rem;// 60vh
     object-fit: cover;
-    object-position: center; // center bottom
+    object-position: center bottom; // center
     overflow: hidden;
 
 }
 
 .restau-head { 
-    padding: 0 2rem;
+   // position: absolute;
+    padding: 0 1rem;
+    margin-top: 0px;
+    border-radius: 2rem 2rem 0 0;
+    background: white;
     h2 {
     font-family: "Shrikhand", "cursive";
-    
+   // @include mixins.heart;
+
 }
 }   
 
@@ -24,7 +30,7 @@ img {
     font-size: 2rem;
     .fa:before {
         content: "/f004";
-      //  @include mixins.heart;
+      //@include mixins.heart;
     }
     &::after {
         @include mixins.heart ($opacity: 0, $font-weight: 900, $color: transparent);
