@@ -1,3 +1,6 @@
+Attention : I am a student, may contain errors...
+Working progress :) 
+
 # Ohmyfood
 
 1. Télécharger Node js
