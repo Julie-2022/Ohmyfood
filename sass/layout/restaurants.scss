@@ -38,6 +38,7 @@
     border-radius: 1rem;
     @include mixins.shad;
     &:hover {
+        //background-size: 100%;
         @include mixins.hover-card;}
     @media (max-width:variables.$breakpoint) {
         min-width: 20rem;
