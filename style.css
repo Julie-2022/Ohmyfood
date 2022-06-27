@@ -512,8 +512,7 @@ footer .fa-handshake-angle:before {
   margin-block: 2rem;
   background-color: white;
   border-radius: 1rem;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden;
   height: 4rem;
   cursor: pointer;
   box-shadow: 2px 3px 13px 0px rgba(179, 179, 179, 0.9);
@@ -524,8 +523,10 @@ footer .fa-handshake-angle:before {
   border-radius: 0 1rem 1rem 0;
   opacity: 1;
   animation: check-in 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   margin-right: 0;
   transition: margin-right 1s;
+  transition: all 0.5s;
 }
 .buttonM:hover .fa-check {
   opacity: 1;
@@ -547,15 +548,20 @@ footer .fa-handshake-angle:before {
 }
 
 .description {
+  width: 100%;
   overflow: hidden;
   margin: 0.4rem;
-  line-height: 22px;
+  line-height: 1.5rem;
+  padding-left: 10px;
 }
 
 .price {
+  float: right;
+  position: relative;
+  margin-right: 25px;
   align-self: end;
   font-weight: 900;
-  padding-bottom: 5px;
+  bottom: 15px;
 }
 .price:hover .buttonM {
   animation: push-price 0.3s ease-in-out forwards;
@@ -565,7 +571,8 @@ footer .fa-handshake-angle:before {
   width: 0;
   max-width: 4rem;
   height: 4rem;
-  right: 3rem;
+  top: 0;
+  right: 0;
   background-color: #99E2D0;
   border-radius: 0 1rem 1rem 0;
   display: grid;
