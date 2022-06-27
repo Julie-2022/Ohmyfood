@@ -166,9 +166,9 @@ header {
   padding-bottom: 0.5rem;
   font-size: 1.5rem;
 }
-.explorer p {
-  font-size: 1rem;
+.explorer h3 {
   font-weight: lighter;
+  color: #7E7E7E;
 }
 .explorer button {
   color: white;
@@ -179,13 +179,52 @@ header {
   background-image: linear-gradient(to right top, #FF79DA, #9356DC);
   box-shadow: 2px 3px 13px 0px rgba(179, 179, 179, 0.9);
 }
+.explorer button p {
+  font-size: 1rem;
+  font-weight: lighter;
+}
 .explorer button:hover {
   cursor: pointer;
-  transform: scale(1, 1.05);
+  transform: scale(1, 1.05) none;
   transition: 300ms;
   opacity: 0.9;
 }
 
+/* Loader-spinner */
+.loader {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  animation: loader-stop 1s 4s forwards;
+  transform-origin: center;
+}
+.loader::after {
+  content: "";
+  height: 7rem;
+  width: 7rem;
+  border: 5px solid transparent;
+  border-top: 5px solid #9356DC;
+  border-bottom: 5px solid #FF79DA;
+  border-radius: 50%;
+  animation: spin 1s infinite ease-in-out;
+  animation-iteration-count: 4;
+}
+
+@keyframes loader-stop {
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 .blockfonction {
   padding-bottom: 2rem;
 }
@@ -322,6 +361,7 @@ header {
 .card__details .fa-thin {
   bottom: 20px;
   padding-right: 0;
+  position: absolute;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -332,13 +372,13 @@ header {
   content: "\f004";
   font-size: 2rem;
   right: 0;
-  position: absolute;
   color: inherit;
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
 }
 .card__details .fa-thin:hover {
+  position: absolute;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -349,7 +389,6 @@ header {
   content: "\f004";
   font-size: 2rem;
   right: 0;
-  position: absolute;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -400,6 +439,16 @@ footer .fa-handshake-angle:before {
   font-size: small;
 }
 
+@keyframes menu-appear {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* Animations check */
 @keyframes turn-check {
   0% {
@@ -417,6 +466,31 @@ footer .fa-handshake-angle:before {
     transform: translateX(-55px);
   }
 }
+#page-restau header::before {
+  position: absolute;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f060";
+  font-size: x-large;
+  left: 1rem;
+  top: 3rem;
+  position: absolute;
+  transform: translateY(-40%);
+  transition: transform 0.5s;
+}
+#page-restau header:hover::before {
+  font-size: 1.7rem;
+  cursor: pointer;
+  transform: scale(1, 1.05) translateY(-50%);
+  transition: 300ms;
+  opacity: 0.9;
+}
+
 .banner img {
   position: relative;
   width: 100%;
@@ -445,6 +519,7 @@ footer .fa-handshake-angle:before {
 
 .fa-thin {
   padding-right: 10%;
+  position: absolute;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -455,13 +530,13 @@ footer .fa-handshake-angle:before {
   content: "\f004";
   font-size: 2rem;
   right: 0;
-  position: absolute;
   color: inherit;
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
 }
 .fa-thin:hover {
+  position: absolute;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -472,7 +547,6 @@ footer .fa-handshake-angle:before {
   content: "\f004";
   font-size: 2rem;
   right: 0;
-  position: absolute;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -493,17 +567,29 @@ footer .fa-handshake-angle:before {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  border: 1px solid red;
 }
 @media (max-width: 1000px) {
   .menu {
     grid-template-columns: 1fr;
   }
 }
+.menu h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+}
+.menu h3::after {
+  content: "";
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #99E2D0;
+  position: absolute;
+  top: 2rem;
+  left: 0;
+}
 
 .grid-menu {
   width: 100%;
-  border: 1px solid green;
 }
 
 .buttonM {
@@ -517,14 +603,29 @@ footer .fa-handshake-angle:before {
   cursor: pointer;
   box-shadow: 2px 3px 13px 0px rgba(179, 179, 179, 0.9);
 }
+.buttonM:nth-child(1) {
+  animation: menu-appear 1s;
+  animation-fill-mode: both;
+  animation-delay: 100ms;
+}
+.buttonM:nth-child(2) {
+  animation: menu-appear 1s;
+  animation-fill-mode: both;
+  animation-delay: 200ms;
+}
+.buttonM:nth-child(3) {
+  animation: menu-appear 1s;
+  animation-fill-mode: both;
+  animation-delay: 300ms;
+}
 .buttonM:hover .check {
   width: 25%;
   visibility: visible;
   border-radius: 0 1rem 1rem 0;
   opacity: 1;
+  margin-right: 0;
   animation: check-in 0.5s ease-in-out;
   transition: all 0.3s ease-in-out;
-  margin-right: 0;
   transition: margin-right 1s;
   transition: all 0.5s;
 }
@@ -602,6 +703,33 @@ footer .fa-handshake-angle:before {
   overflow: hidden;
   white-space: nowrap;
   max-width: 150px;
+}
+
+/* Button Commander */
+.order {
+  height: 40%;
+  display: grid;
+  place-items: center;
+}
+.order button {
+  color: white;
+  padding: 0 2rem;
+  margin-bottom: 4rem;
+  border: none;
+  border-radius: 2rem;
+  background-image: linear-gradient(to right top, #FF79DA, #9356DC);
+  box-shadow: 2px 3px 13px 0px rgba(179, 179, 179, 0.9);
+  margin: 2rem 0 4rem 0;
+}
+.order button p {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+.order button:hover {
+  cursor: pointer;
+  transform: scale(1, 1.05) none;
+  transition: 300ms;
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=style.css.map */

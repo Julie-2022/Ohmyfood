@@ -1,4 +1,5 @@
 @use "../utils/variables";
+@use "../utils/mixins";
 
 // Explorer
 @mixin button {
@@ -7,6 +8,15 @@
     margin-bottom: 4rem;
     border: none;
     border-radius: 2rem;
+    & p {
+        font-size: 1rem;
+        font-weight: lighter;
+    }
+    @include mixins.gradient;
+    @include mixins.shad;
+    &:hover {
+        @include mixins.hover-explorer;
+    }
 }
 // Fonctioning
 @mixin buttonf {
@@ -20,6 +30,21 @@
     border-radius: 1 * variables.$fonctioning-dim;
     background-color: #F6F6F6;
 }
-// Pages-Restaurants
-
+// Pages-Restau
+@mixin buttonM {
+    //**  position: absolute;
+    max-width: 90%;
+    margin: auto;
+    margin-block: 2rem;
+    background-color: white;
+    border-radius: 1 * variables.$fonctioning-dim;
+    
+    overflow: hidden;
+    height: 4 * variables.$fonctioning-dim;
+    // padding: 0 0 0 0.5 * variables.$fonctioning-dim;
+    // margin: 1.5 * variables.$fonctioning-dim 1 * variables.$fonctioning-dim;
+    // justify-content: space-around;
+    cursor: pointer;
+    @include mixins.shad;
+}
 

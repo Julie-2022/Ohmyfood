@@ -1,3 +1,5 @@
+@use "./colors";
+
 @mixin shad {
     // box-shadow: 6px 5px 15px #D8D8D8;
     box-shadow: 2px 3px 13px 0px rgba(179, 179, 179, 0.9);
@@ -13,9 +15,9 @@
 background-color: #F5EDFF;
 }
 
-@mixin hover-explorer {
+@mixin hover-explorer ($transformScale: none) {
     cursor: pointer;
-    transform: scale(1, 1.05);
+    transform: scale(1, 1.05) $transformScale;
     transition: 300ms;
     opacity: 0.9;
 }
@@ -31,18 +33,23 @@ transition: 2s;
      #FF79DA, #9356DC);
 }
 
+@mixin icon-fontA ($font-weight: 400) {
+position:absolute; 
+display: inline-block;
+font-style: normal;
+font-variant: normal;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+font-family: "Font Awesome 6 Free";
+font-weight: $font-weight;
+}
+
 @mixin heart ($opacity: 1, $font-weight: 400, $color: inherit) {
-        display: inline-block;
-        font-style: normal;
-        font-variant: normal;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        font-family: "Font Awesome 6 Free";
-        font-weight: $font-weight;
+       @include icon-fontA ($font-weight);
         content: "\f004";
         font-size: 2rem;
         right: 0;
-        position: absolute;        
+    //    position: absolute;        
         color: $color;
         background-clip: text;
         -webkit-background-clip: text;

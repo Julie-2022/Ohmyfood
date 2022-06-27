@@ -1,6 +1,8 @@
 @use "./utils/mixins";
+@use "./utils/anim";
 @use "./utils/variables";
 @use "./utils/colors";
+@use "./components/buttons";
 
 /* Animations check */
 @keyframes turn-check {
@@ -19,6 +21,29 @@
 
     100% {
         transform: translateX(-55px);
+    }
+}
+
+
+#page-restau {
+
+header {
+    &::before {
+        @include mixins.icon-fontA ($font-weight: 900);
+        content: "\f060";
+        font-size: x-large;
+        left: 1rem;
+        top: 3rem;
+        position: absolute;
+        transform: translateY(-40%);
+        transition: transform 0.5s;
+    }
+    &:hover::before {
+    font-size: 1.7rem;
+    @include mixins.hover-explorer ($transformScale: translateY(-50%));
+    
+    }
+  
     }
 }
 
@@ -67,46 +92,60 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    border: 1px solid red;
+ //   animation: menu-appear 0.5s ease-in-out;
     @media (max-width: variables.$breakpoint) {
         grid-template-columns: 1fr;
+    }
+    h3 {
+        font-weight: 400;
+        text-transform: uppercase;
+        position: relative;
+        &::after {
+            content: "";
+            width : 3rem;
+            height: 0.25rem;
+            background-color: colors.$tertiary;
+       //   display: block;
+            position: absolute;
+            top: 2rem;
+            left: 0;
+        }
     }
 }
 
 .grid-menu {
     width: 100%;
-    border: 1px solid green;
  //   @media (min-width: 1000px) {
  //   margin-left: 0;
   //  }
-}
+  
+  
+  }
+
+
 .buttonM {
-  //**  position: absolute;
-    max-width: 90%;
-    margin: auto;
-    margin-block: 2rem;
-    background-color: white;
-    border-radius: 1 * variables.$fonctioning-dim;
-    
-    overflow: hidden;
-    height: 4 * variables.$fonctioning-dim;
-   // padding: 0 0 0 0.5 * variables.$fonctioning-dim;
-    // margin: 1.5 * variables.$fonctioning-dim 1 * variables.$fonctioning-dim;
-    // justify-content: space-around;
-    cursor: pointer;
-    @include mixins.shad;
-        &:hover .check {
-       width: 25%;
-        visibility: visible;         
-        //     width: 4rem;
-        border-radius: 0 1rem 1rem 0; //
-        opacity: 1; //
-        animation: check-in 0.5s ease-in-out; //***
-    transition: all 0.3s ease-in-out; //***
-        margin-right: 0;
-        transition: margin-right 1s;
-    transition: all 0.5s; //***
+    @include buttons.buttonM;
+//anim
+$numberOfButton: 3;
+    @for $i from 1 through $numberOfButton {
+        &:nth-child(#{$i}) {
+    animation: menu-appear 1s;
+    animation-fill-mode: both;
+    animation-delay: 100ms * $i;   
         }
+    }
+
+    &:hover .check {
+    width: 25%;  //  width: 4rem;
+    visibility: visible;         
+    border-radius: 0 1rem 1rem 0; //
+    opacity: 1; //
+    margin-right: 0;
+    animation: check-in 0.5s ease-in-out; //***
+    transition: all 0.3s ease-in-out; //***
+    transition: margin-right 1s;
+    transition: all 0.5s; //***
+    }
         &:hover .fa-check {
         opacity: 1; //
         transition: all 0.3s ease-in-out; //                
@@ -189,3 +228,13 @@ padding-left: 10px;
     max-width: 150px;
 }
 
+/* Button Commander */
+.order {
+    height: 40%;
+    display: grid;
+    place-items: center;
+    & button {
+        @include buttons.button;
+        margin: 2rem 0 4rem 0; 
+       }
+}
