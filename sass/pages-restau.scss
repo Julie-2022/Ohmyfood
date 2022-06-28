@@ -1,28 +1,9 @@
+
 @use "./utils/mixins";
 @use "./utils/anim";
 @use "./utils/variables";
 @use "./utils/colors";
 @use "./components/buttons";
-
-/* Animations check */
-@keyframes turn-check {
-    0% {
-        transform: rotate(-270deg);
-    }
-    100% {
-        transform: rotate(0);
-    }
-}
-
-@keyframes push-price {
-    0% {
-        transform: translateY(0px);
-    }
-
-    100% {
-        transform: translateX(-55px);
-    }
-}
 
 
 #page-restau {
@@ -236,5 +217,8 @@ padding-left: 10px;
     & button {
         @include buttons.button;
         margin: 2rem 0 4rem 0; 
+        &:hover {
+            @include shad-button;
+        }
        }
 }

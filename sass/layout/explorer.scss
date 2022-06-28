@@ -1,7 +1,9 @@
+@use "../utils/anim";
 /* Zone Explorer */
 @use "../utils/colors";
 @use "../utils/mixins";
 @use "../components/buttons";
+
 
 .explorer {
     text-align: center;
@@ -15,12 +17,10 @@
     color: colors.$grey;
 }
 
-//& p {
-//    font-size: 1rem;
-//    font-weight: lighter;
-//}
 & button {
     @include buttons.button;
+    &:hover {
+    @include mixins.shad-button;}
 }
 }
 
@@ -58,33 +58,5 @@
         border-radius: 50%; // 7rem
         animation: spin $anim-duration infinite ease-in-out; //linear 
         animation-iteration-count: $anim-count;
-    }
-
-
-}
-
-
-@keyframes loader-stop {
-   // from {
-   //     transform: scale(1);
-   // }
-
-    to {
-        transform: scale(0);
-    }
-}
-
-// @keyframes loader-stop {
-//    0% {
-//        transform: scale(1);
-//    }
-//   100% {
-//       transform: scale(0);
-//   }
-//}
-
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
     }
 }
