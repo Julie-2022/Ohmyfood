@@ -255,7 +255,7 @@ header {
   border: none;
   border-radius: 2rem;
   background-image: linear-gradient(to right top, #FF79DA, #9356DC);
-  box-shadow: 2px 3px 13px 0px rgba(179, 179, 179, 0.9);
+  box-shadow: 2px 2px 7px 0px rgba(179, 179, 179, 0.9);
 }
 .explorer button p {
   font-size: 1rem;
@@ -266,6 +266,7 @@ header {
   transform: scale(1, 1.05) translateY(0);
   transition: 300ms;
   opacity: 0.7;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
 .explorer button:hover {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
@@ -312,7 +313,7 @@ header {
   border: 1px solid transparent;
   border-radius: 1rem;
   background-color: #F6F6F6;
-  box-shadow: 2px 3px 13px 0px rgba(179, 179, 179, 0.9);
+  box-shadow: 2px 2px 7px 0px rgba(179, 179, 179, 0.9);
 }
 .fonctioning .buttonf:hover {
   background-color: #F5EDFF;
@@ -380,7 +381,7 @@ header {
   margin: auto;
   border-radius: 1rem;
   transition: 0.5s;
-  box-shadow: 2px 3px 13px 0px rgba(179, 179, 179, 0.9);
+  box-shadow: 2px 2px 7px 0px rgba(179, 179, 179, 0.9);
 }
 .card:hover {
   cursor: pointer;
@@ -573,6 +574,7 @@ footer .fa-handshake-angle:before {
   transform: scale(1, 1.05) translateY(-50%);
   transition: 300ms;
   opacity: 0.7;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
 
 .banner img {
@@ -679,11 +681,11 @@ footer .fa-handshake-angle:before {
   display: flex;
   background-color: white;
   border-radius: 1rem;
-  margin: 0.5rem;
+  margin: 2rem 0.5rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  box-shadow: 2px 3px 13px 0px rgba(179, 179, 179, 0.9);
+  box-shadow: 2px 2px 7px 0px rgba(179, 179, 179, 0.9);
 }
 .menu .menu__category .menu-item:nth-child(1) {
   animation: menu-appear 1s;
@@ -748,7 +750,7 @@ footer .fa-handshake-angle:before {
 }
 
 section.order {
-  height: 30vh;
+  height: 30%;
   display: grid;
   place-items: center;
 }
@@ -759,7 +761,8 @@ section.order button {
   border: none;
   border-radius: 2rem;
   background-image: linear-gradient(to right top, #FF79DA, #9356DC);
-  box-shadow: 2px 3px 13px 0px rgba(179, 179, 179, 0.9);
+  box-shadow: 2px 2px 7px 0px rgba(179, 179, 179, 0.9);
+  margin: 2rem 0 4rem 0;
 }
 section.order button p {
   font-size: 1rem;
@@ -770,6 +773,7 @@ section.order button:hover {
   transform: scale(1, 1.05) translateY(0);
   transition: 300ms;
   opacity: 0.7;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -16,6 +16,7 @@
     @include mixins.shad;
     &:hover {
         @include mixins.hover-explorer;
+        
     }
 }
 // Fonctioning

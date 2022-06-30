@@ -108,7 +108,7 @@ header {
             display: flex;
             background-color: white;
             border-radius: 1 * variables.$fonctioning-dim;
-            margin: 0.5rem;
+            margin: 2rem 0.5rem;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
@@ -172,12 +172,13 @@ header {
     }
 
 section.order {
-    height: 30vh;
+    height: 30%;
     display: grid;
     place-items: center;
 
         button {
             @include buttons.button;
+            margin: 2rem 0 4rem 0;
         }
     }
 
