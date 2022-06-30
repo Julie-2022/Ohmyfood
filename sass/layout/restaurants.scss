@@ -36,7 +36,9 @@
     background-color: #FFFFFF;
     margin: auto;
     border-radius: 1rem;
+    transition: .5s;
     @include mixins.shad;
+
     &:hover {
         //background-size: 100%;
         @include mixins.hover-card;}

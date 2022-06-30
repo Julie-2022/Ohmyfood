@@ -30,21 +30,7 @@
     border-radius: 1 * variables.$fonctioning-dim;
     background-color: #F6F6F6;
 }
-// Pages-Restau
-@mixin buttonM {
-    //**  position: absolute;
-    max-width: 90%;
-    margin: auto;
-    margin-block: 2rem;
-    background-color: white;
-    border-radius: 1 * variables.$fonctioning-dim;
-    
-    overflow: hidden;
-    height: 4 * variables.$fonctioning-dim;
-    // padding: 0 0 0 0.5 * variables.$fonctioning-dim;
-    // margin: 1.5 * variables.$fonctioning-dim 1 * variables.$fonctioning-dim;
-    // justify-content: space-around;
-    cursor: pointer;
-    @include mixins.shad;
-}
+
+
+
 
