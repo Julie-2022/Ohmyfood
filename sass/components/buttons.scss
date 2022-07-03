@@ -2,9 +2,12 @@
 @use "../utils/mixins";
 @use "../utils/colors";
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
+=======
+>>>>>>> refs/remotes/origin/master
 
 // Explorer
 @mixin button {
@@ -36,10 +39,14 @@
     border-radius: 1 * variables.$fonctioning-dim;
     background-color: #F6F6F6;
 <<<<<<< HEAD
+<<<<<<< HEAD
     @include mixins.shad;   
 =======
     @include mixins.shad;
 >>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
+=======
+    @include mixins.shad;
+>>>>>>> refs/remotes/origin/master
     &:hover {
         @include mixins.hover-light;
         @include mixins.shad-light;
@@ -47,8 +54,15 @@
             color: colors.$purple;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
     }
 =======
+=======
+
+    }
+
+}
+>>>>>>> refs/remotes/origin/master
 
     }
 

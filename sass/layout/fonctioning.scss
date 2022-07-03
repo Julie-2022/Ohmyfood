@@ -8,8 +8,11 @@
   h2 {
     padding-left: 2rem;
 <<<<<<< HEAD
+<<<<<<< HEAD
     }  
 =======
+=======
+>>>>>>> refs/remotes/origin/master
 
 }  
 >>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
@@ -19,6 +22,7 @@
     column-gap: 2rem;
     & .buttonf {
         @include buttons.buttonf;
+<<<<<<< HEAD
 <<<<<<< HEAD
         @include mixins.shad;  
        } 
@@ -43,6 +47,8 @@
 }
 }
 =======
+=======
+>>>>>>> refs/remotes/origin/master
     }  
     & .icon {
         border-radius: 2 * variables.$fonctioning-dim;

@@ -4,6 +4,7 @@
 
 body {
 <<<<<<< HEAD
+<<<<<<< HEAD
     @media (max-width:variables.$breakpoint) {
         padding: 0;
     }
@@ -16,6 +17,8 @@ body {
 }
 
 =======
+=======
+>>>>>>> refs/remotes/origin/master
 @media (max-width:variables.$breakpoint) {
     padding: 0;
 }
@@ -28,7 +31,10 @@ body {
     padding: 0 7rem;
 }
 }
+<<<<<<< HEAD
 >>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
+=======
+>>>>>>> refs/remotes/origin/master
 .restaurants {
     background-color: #f6f6f6;
     padding-bottom: 3rem;
@@ -66,6 +72,7 @@ body {
 
     &:hover {
 <<<<<<< HEAD
+<<<<<<< HEAD
         @include mixins.hover-card;
         @media (max-width:variables.$breakpoint) {
             min-width: 20rem;
@@ -81,6 +88,8 @@ body {
             height: 28rem;
         }
 =======
+=======
+>>>>>>> refs/remotes/origin/master
     @include mixins.hover-card;}
     @media (min-width: variables.$breakpoint3) {
         max-width: 50rem;
@@ -101,10 +110,14 @@ body {
         background-image: url(../../assets/card-#{$i}.jpg);
         background-position: center 60%;
 <<<<<<< HEAD
+<<<<<<< HEAD
         }   
 =======
         } 
 >>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
+=======
+        } 
+>>>>>>> refs/remotes/origin/master
     }
     
     &__details {
@@ -128,7 +141,10 @@ body {
             padding-right: 1rem;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> refs/remotes/origin/master
         @include mixins.heart;
 >>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
         &:hover {

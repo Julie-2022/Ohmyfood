@@ -19,10 +19,14 @@ header {
         transform: translateY(-40%);
         transition: transform 0.5s;
 <<<<<<< HEAD
+<<<<<<< HEAD
         @media (max-width:variables.$breakpoint) {
 =======
         @media (max-width: variables.$breakpoint){
 >>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
+=======
+        @media (max-width: variables.$breakpoint){
+>>>>>>> refs/remotes/origin/master
             left: 5%;
         }
     }
@@ -75,16 +79,22 @@ header {
         padding: 1rem;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     @media all and (min-width: variables.$breakpoint) and (max-width: $breakpoint2) {
         padding: 0 4rem;
     }
 =======
+=======
+>>>>>>> refs/remotes/origin/master
     
     @media all and (min-width: variables.$breakpoint) and (max-width: $breakpoint2) {
         padding: 0 4rem;
     }
     
+<<<<<<< HEAD
 >>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
+=======
+>>>>>>> refs/remotes/origin/master
     @media (min-width: variables.$breakpoint2) {
         padding: 0 7rem;
     }
@@ -131,10 +141,14 @@ header {
             border-radius: 1 * variables.$fonctioning-dim;
             margin: 2rem 0.5rem;
 <<<<<<< HEAD
+<<<<<<< HEAD
             overflow: hidden;
 =======
             overflow: hidden;        
 >>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
+=======
+            overflow: hidden;        
+>>>>>>> refs/remotes/origin/master
             @include mixins.shad;
         
             .menu-item__price {
@@ -145,6 +159,7 @@ header {
                 align-items: flex-end;
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
             .menu-item__description {
                 padding: 1rem;
                 overflow: hidden;
@@ -154,6 +169,10 @@ header {
                 .menu-item__description {
                     padding: 1rem;
 >>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
+=======
+                .menu-item__description {
+                    padding: 1rem;
+>>>>>>> refs/remotes/origin/master
                     overflow: hidden;
                     h4,
                     p {
@@ -183,6 +202,7 @@ header {
                         height: $size;
                         border-radius: $size;
 <<<<<<< HEAD
+<<<<<<< HEAD
                     }
                 }              
                 &:hover {
@@ -199,6 +219,16 @@ header {
                     .menu-item__check {
                         margin-right: 0;
 >>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
+=======
+
+
+                        }
+                    }               
+                &:hover {
+                    cursor: pointer;
+                    .menu-item__check {
+                        margin-right: 0;
+>>>>>>> refs/remotes/origin/master
                     }
                     .fa-check {
                         animation: turn-check 0.5s ease-in-out;
@@ -209,10 +239,14 @@ header {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 section .order {
 =======
     section.order {
 >>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
+=======
+    section.order {
+>>>>>>> refs/remotes/origin/master
     height: 30%;
     display: grid;
     place-items: center;

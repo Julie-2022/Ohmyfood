@@ -9,10 +9,14 @@
     text-align: center;
 & h2 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     padding : 3rem 0 0 0;
 =======
     padding: 3rem 0 0 0;
 >>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
+=======
+    padding: 3rem 0 0 0;
+>>>>>>> refs/remotes/origin/master
     font-size: 1.5rem;
     }   
 & h3 {
@@ -23,10 +27,13 @@
 & button {
     @include buttons.button;
 <<<<<<< HEAD
+<<<<<<< HEAD
     &:hover {
     @include mixins.shad-button;}
     }
 =======
+=======
+>>>>>>> refs/remotes/origin/master
 }
 >>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
 }
