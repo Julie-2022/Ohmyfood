@@ -57,8 +57,8 @@ main {
 }
 
 h2 {
-  padding: 2rem 0;
   margin: 0;
+  padding: 2rem 0;
 }
 
 h4 {
@@ -184,8 +184,12 @@ header {
   text-align: center;
   gap: 1rem;
   background-color: #EAEAEA;
-  box-shadow: inset 0 3px 2px #D5D5D5;
   padding: 2rem;
+  box-shadow: inset 0 3px 2px #D5D5D5;
+<<<<<<< HEAD
+  padding: 2rem;
+=======
+>>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
 }
 .location i {
   font-size: 1.2rem;
@@ -264,9 +268,12 @@ header {
   transform: scale(1, 1.05) translateY(0);
   transition: 300ms;
   opacity: 0.7;
+<<<<<<< HEAD
 }
 .explorer button:hover {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+=======
+>>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
 }
 
 /* Loader-spinner */
@@ -404,6 +411,7 @@ header {
   transform: scale(1.03, 1) translateY(1%);
   transition: 0.5s;
 }
+<<<<<<< HEAD
 @media (max-width: 1000px) {
   .card:hover {
     min-width: 20rem;
@@ -420,6 +428,10 @@ header {
 }
 @media (min-width: 2000px) {
   .card:hover {
+=======
+@media (min-width: 2000px) {
+  .card {
+>>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
     max-width: 50rem;
     width: 75%;
     height: 28rem;
@@ -479,6 +491,12 @@ header {
   opacity: 1;
   bottom: 20px;
   padding-right: 0;
+}
+@media (min-width: 2000px) {
+  .card__details .fa-thin {
+    bottom: 2.5rem;
+    padding-right: 1rem;
+  }
 }
 @media (min-width: 2000px) {
   .card__details .fa-thin {
@@ -831,9 +849,12 @@ section .order button:hover {
   transform: scale(1, 1.05) translateY(0);
   transition: 300ms;
   opacity: 0.7;
+<<<<<<< HEAD
 }
 section .order button:hover {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+=======
+>>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,7 +8,11 @@
 .explorer {
     text-align: center;
 & h2 {
+<<<<<<< HEAD
     padding : 3rem 0 0 0;
+=======
+    padding: 3rem 0 0 0;
+>>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
     font-size: 1.5rem;
     }   
 & h3 {
@@ -18,9 +22,13 @@
 
 & button {
     @include buttons.button;
+<<<<<<< HEAD
     &:hover {
     @include mixins.shad-button;}
     }
+=======
+}
+>>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
 }
 
 /* Loader-spinner */
@@ -35,7 +43,6 @@
     height: 100vh;
     inset: 0; // = margin: 0
     z-index: 1;
-   // Mentor - opacity: 0.9;
     animation: loader-stop 1s $anim-duration * $anim-count forwards; // duration timing-function delay iteration-count direction fill-mode;
     //animation-fill-mode: forwards; 
     //animation-delay: $anim-count * $anim-duration;

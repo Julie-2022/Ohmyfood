@@ -7,13 +7,19 @@
     padding-bottom: 2rem;
   h2 {
     padding-left: 2rem;
+<<<<<<< HEAD
     }  
+=======
+
+}  
+>>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
 }
 
 .fonctioning {
     column-gap: 2rem;
     & .buttonf {
         @include buttons.buttonf;
+<<<<<<< HEAD
         @include mixins.shad;  
        } 
     & .icon {
@@ -36,3 +42,39 @@
     padding: 1.5 * variables.$fonctioning-dim 0;
 }
 }
+=======
+    }  
+    & .icon {
+        border-radius: 2 * variables.$fonctioning-dim;
+        /* cercle */
+        width: 1.5 * variables.$fonctioning-dim;
+        /* bordure */
+        height: 1.5 * variables.$fonctioning-dim;
+        color: white;
+        background-color: colors.$purple;
+        margin: 2.5 * variables.$fonctioning-dim 0;
+        font-size: variables.$fonctioning-dim;
+        float: left;
+        position: absolute;
+        border: 1px solid transparent;
+    }
+    & i {
+        color: colors.$grey;
+        font-size: 1.2 variables.$fonctioning-dim;
+        padding: 1.5 * variables.$fonctioning-dim 0;
+        
+        }
+    }
+ 
+
+
+
+
+
+// cursor: pointer;
+   // background-color: rgb(245, 222, 249, 0.5);
+   // box-shadow: 7px 7px 15px #ccaef2;
+   // @media (max-width: 767px) {
+   // flex-direction: column;}
+
+>>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b

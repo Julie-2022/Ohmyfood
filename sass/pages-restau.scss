@@ -18,7 +18,11 @@ header {
         position: absolute;
         transform: translateY(-40%);
         transition: transform 0.5s;
+<<<<<<< HEAD
         @media (max-width:variables.$breakpoint) {
+=======
+        @media (max-width: variables.$breakpoint){
+>>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
             left: 5%;
         }
     }
@@ -70,9 +74,17 @@ header {
     @media (max-width:variables.$breakpoint) {
         padding: 1rem;
     }
+<<<<<<< HEAD
     @media all and (min-width: variables.$breakpoint) and (max-width: $breakpoint2) {
         padding: 0 4rem;
     }
+=======
+    
+    @media all and (min-width: variables.$breakpoint) and (max-width: $breakpoint2) {
+        padding: 0 4rem;
+    }
+    
+>>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
     @media (min-width: variables.$breakpoint2) {
         padding: 0 7rem;
     }
@@ -83,7 +95,6 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem; 
-    //   animation: menu-appear 0.5s ease-in-out;
     @media (max-width: variables.$breakpoint) {
         grid-template-columns: 1fr;
     }
@@ -119,9 +130,13 @@ header {
             background-color: white;
             border-radius: 1 * variables.$fonctioning-dim;
             margin: 2rem 0.5rem;
+<<<<<<< HEAD
             overflow: hidden;
+=======
+            overflow: hidden;        
+>>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
             @include mixins.shad;
-            
+        
             .menu-item__price {
                 margin-left: auto;
                 font-weight: 900;
@@ -129,16 +144,24 @@ header {
                 display: flex;
                 align-items: flex-end;
             }
+<<<<<<< HEAD
             .menu-item__description {
                 padding: 1rem;
                 overflow: hidden;
                 h4,
                 p {
+=======
+                .menu-item__description {
+                    padding: 1rem;
+>>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
                     overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    }
-
+                    h4,
+                    p {
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        
+                    } 
                 }
                 .menu-item__check {
                     display: grid;
@@ -159,22 +182,37 @@ header {
                         width: $size;
                         height: $size;
                         border-radius: $size;
+<<<<<<< HEAD
                     }
                 }              
                 &:hover {
                     cursor: pointer;
                     .menu-item__check {
                     margin-right: 0;
+=======
+
+
+                        }
+                    }               
+                &:hover {
+                    cursor: pointer;
+                    .menu-item__check {
+                        margin-right: 0;
+>>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
                     }
                     .fa-check {
                         animation: turn-check 0.5s ease-in-out;
                     }
                 }
-            }       
+            }    
         }
     }
 
+<<<<<<< HEAD
 section .order {
+=======
+    section.order {
+>>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
     height: 30%;
     display: grid;
     place-items: center;
