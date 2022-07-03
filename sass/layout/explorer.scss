@@ -8,26 +8,25 @@
 .explorer {
     text-align: center;
 & h2 {
-    padding-top: 3rem;
-    padding-bottom: 0.5rem;
+    padding : 3rem 0 0 0;
     font-size: 1.5rem;
-}   
+    }   
 & h3 {
     font-weight: lighter;
     color: colors.$grey;
-}
+    }
 
 & button {
     @include buttons.button;
     &:hover {
     @include mixins.shad-button;}
-}
+    }
 }
 
 /* Loader-spinner */
 
 .loader {
-    $anim-duration: 1s;
+    $anim-duration: 0.1s;
     $anim-count: 4;
     position: fixed;
     display: grid;

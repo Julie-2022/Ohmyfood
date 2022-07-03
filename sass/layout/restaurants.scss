@@ -2,19 +2,29 @@
 @use "../utils/variables";
 @use "../utils/mixins";
 
+body {
+    @media (max-width:variables.$breakpoint) {
+        padding: 0;
+    }
+    @media all and (min-width: variables.$breakpoint) and (max-width: $breakpoint2) {
+        padding: 0 4rem;
+    }
+    @media (min-width: variables.$breakpoint2) {
+        padding: 0 7rem;
+    }
+}
+
 .restaurants {
     background-color: #f6f6f6;
     padding-bottom: 3rem;
     h2 {
-        padding-left: 1rem;
+        padding-left: 2rem;
         display: grid;
         grid-template-columns: 500px;
         grid-template-rows: auto;
         grid-template-areas: "header";
     }
 }
-
-
 
 .blockrestau {
     width: 100%;
@@ -31,25 +41,29 @@
     }
 }
 .card {
-    width: 80%;
-    height: 18rem;
+    width: 70%;
+    height: 20rem;
     background-color: #FFFFFF;
     margin: auto;
     border-radius: 1rem;
-    transition: .5s;
+    transition: 0.5s;
     @include mixins.shad;
 
     &:hover {
-        //background-size: 100%;
-        @include mixins.hover-card;}
-    @media (max-width:variables.$breakpoint) {
-        min-width: 20rem;
-        max-width: 25rem;
-    }
-    @media (min-width: variables.$breakpoint2) {
-        max-width: 30rem;
-        width: 75%;
-
+        @include mixins.hover-card;
+        @media (max-width:variables.$breakpoint) {
+            min-width: 20rem;
+            max-width: 25rem;
+        }
+        @media (min-width: variables.$breakpoint2) {
+            max-width: 30rem;
+            @include mixins.hover-card;
+        }
+        @media (min-width: variables.$breakpoint3) {
+            max-width: 50rem;
+            width: 75%;
+            height: 28rem;
+        }
     }    
     &__img {
         width: 100%;
@@ -63,10 +77,7 @@
        &__img-#{$i} {
         background-image: url(../../assets/card-#{$i}.jpg);
         background-position: center 60%;
-        }
-     //  &__img-2 {
-     //   background-position: center bottom;
-     //   }     
+        }   
     }
     
     &__details {
@@ -76,11 +87,19 @@
         font-weight: 300;
         padding-left: 1rem;
         position:relative;
+        @media (min-width: variables.$breakpoint2) {
+            font-size: larger;
+            line-height: 2rem;
+        }
 
     .fa-thin {
+        @include mixins.heart;
         bottom: 20px;
         padding-right: 0;
-        @include mixins.heart;
+        @media (min-width: variables.$breakpoint3) {
+            bottom: 2.5rem;
+            padding-right: 1rem;
+        }
         &:hover {
         @include mixins.heart ($opacity: 0, $font-weight: 900, $color: transparent);
         @include mixins.hover-heart;
