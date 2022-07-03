@@ -23,7 +23,6 @@
     transform: scale(1, 1.05) $transformScale;
     transition: 300ms;
     opacity: 0.7;
-    @include shad-button;
 }
 
 @mixin hover-card {
@@ -55,8 +54,7 @@ font-weight: $font-weight;
        @include icon-fontA ($font-weight);
         content: "\f004";
         font-size: 2rem;
-        right: 0;
-    //    position: absolute;        
+        right: 0;  
         color: $color;
         background-clip: text;
         -webkit-background-clip: text;

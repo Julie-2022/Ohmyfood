@@ -1,9 +1,14 @@
 @use "../utils/colors";
+@use "../utils/variables";
 
 footer {
 background-color: colors.$dark;
 padding: 2rem;
 color: white;
+@media (min-width: variables.$breakpoint2) {
+    display: grid;
+    place-items: center;
+}
 h3 {
     font-family: "shrikhand", sans-serif;
     font-size: 1.2rem;

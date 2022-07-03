@@ -1,5 +1,6 @@
 @use "../utils/variables";
 @use "../utils/mixins";
+@use "../utils/colors";
 
 // Explorer
 @mixin button {
@@ -30,6 +31,16 @@
     border: 1px solid transparent;
     border-radius: 1 * variables.$fonctioning-dim;
     background-color: #F6F6F6;
+    @include mixins.shad;
+    &:hover {
+        @include mixins.hover-light;
+        @include mixins.shad-light;
+        i::before {
+            color: colors.$purple;
+        }
+
+    }
+
 }
 
 

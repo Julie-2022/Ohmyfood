@@ -6,50 +6,41 @@
 .blockfonction {
     padding-bottom: 2rem;
   h2 {
-    padding-left: 1rem;
+    padding-left: 2rem;
+
 }  
 }
 
 .fonctioning {
-
+    column-gap: 2rem;
     & .buttonf {
         @include buttons.buttonf;
-        @include mixins.shad;  
-        
-        &:hover {
-        @include mixins.hover-light;
-        @include mixins.shad-light;
-       }
-       
-    }
+    }  
     & .icon {
-    border-radius: 2 * variables.$fonctioning-dim;
-    /* cercle */
-    width: 1.5 * variables.$fonctioning-dim;
-    /* bordure */
-    height: 1.5 * variables.$fonctioning-dim;
-    color: white;
-    background-color: colors.$purple;
-    margin: 2.5 * variables.$fonctioning-dim 0;
-    font-size: variables.$fonctioning-dim ;
-    float: left;
-    position: absolute;
-  
-    
+        border-radius: 2 * variables.$fonctioning-dim;
+        /* cercle */
+        width: 1.5 * variables.$fonctioning-dim;
+        /* bordure */
+        height: 1.5 * variables.$fonctioning-dim;
+        color: white;
+        background-color: colors.$purple;
+        margin: 2.5 * variables.$fonctioning-dim 0;
+        font-size: variables.$fonctioning-dim;
+        float: left;
+        position: absolute;
+        border: 1px solid transparent;
+    }
+    & i {
+        color: colors.$grey;
+        font-size: 1.2 variables.$fonctioning-dim;
+        padding: 1.5 * variables.$fonctioning-dim 0;
+        
+        }
+    }
+ 
 
-}
-& i {
-    color: colors.$grey;
-    font-size: 1.2 variables.$fonctioning-dim ;
-}
-& .bordericon {
-    border: 1px solid transparent;
-}
-& .sizeicon {
-    padding: 1.5 * variables.$fonctioning-dim 0;
-}
 
-}
+
 
 
 // cursor: pointer;

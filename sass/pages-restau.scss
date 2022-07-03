@@ -13,11 +13,14 @@ header {
         @include mixins.icon-fontA ($font-weight: 900);
         content: "\f060";
         font-size: x-large;
-        left: 1rem;
+        left: 10%;
         top: 3rem;
         position: absolute;
         transform: translateY(-40%);
         transition: transform 0.5s;
+        @media (max-width: variables.$breakpoint){
+            left: 5%;
+        }
     }
     &:hover::before {
     font-size: 1.7rem;
@@ -65,7 +68,17 @@ header {
 
 .restau-main {
     background-color: colors.$lightgrey;
-    padding: 0 2rem;
+    @media (max-width:variables.$breakpoint) {
+        padding: 1rem;
+    }
+    
+    @media all and (min-width: variables.$breakpoint) and (max-width: $breakpoint2) {
+        padding: 0 4rem;
+    }
+    
+    @media (min-width: variables.$breakpoint2) {
+        padding: 0 7rem;
+    }
 }
 
 .menu {
@@ -73,7 +86,6 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem; 
-    //   animation: menu-appear 0.5s ease-in-out;
     @media (max-width: variables.$breakpoint) {
         grid-template-columns: 1fr;
     }
@@ -109,11 +121,9 @@ header {
             background-color: white;
             border-radius: 1 * variables.$fonctioning-dim;
             margin: 2rem 0.5rem;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
+            overflow: hidden;        
             @include mixins.shad;
-            
+        
             .menu-item__price {
                 margin-left: auto;
                 font-weight: 900;
@@ -121,17 +131,16 @@ header {
                 display: flex;
                 align-items: flex-end;
             }
-            .menu-item__description {
-                padding: 1rem;
-                overflow: hidden;
-                h4,
-                p {
-                    margin: 0; //*
+                .menu-item__description {
+                    padding: 1rem;
                     overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    }
-
+                    h4,
+                    p {
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        
+                    } 
                 }
                 .menu-item__check {
                     display: grid;
@@ -154,24 +163,22 @@ header {
                         border-radius: $size;
 
 
-                    }
-
-                }
-                
+                        }
+                    }               
                 &:hover {
                     cursor: pointer;
                     .menu-item__check {
-                    margin-right: 0;
+                        margin-right: 0;
+                    }
+                    .fa-check {
+                        animation: turn-check 0.5s ease-in-out;
+                    }
                 }
-                .fa-check {
-                    animation: turn-check 0.5s ease-in-out;
-                }
-                }
-            }       
+            }    
         }
     }
 
-section.order {
+    section.order {
     height: 30%;
     display: grid;
     place-items: center;
