@@ -3,11 +3,14 @@
 @use "../utils/colors";
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
 =======
 >>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
 
 // Explorer
 @mixin button {
@@ -40,6 +43,7 @@
     background-color: #F6F6F6;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     @include mixins.shad;   
 =======
     @include mixins.shad;
@@ -47,6 +51,9 @@
 =======
     @include mixins.shad;
 >>>>>>> refs/remotes/origin/master
+=======
+    @include mixins.shad;
+>>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
     &:hover {
         @include mixins.hover-light;
         @include mixins.shad-light;
@@ -55,9 +62,12 @@
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     }
 =======
 =======
+=======
+>>>>>>> a8c7ebfec8449b3628b4c88f8e54eddbd6a2611b
 
     }
 
